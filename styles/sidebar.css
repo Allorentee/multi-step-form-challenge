@@ -1,0 +1,41 @@
+.sidebar__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/assets/images/bg-sidebar-mobile.svg");
+  background-repeat: repeat;
+  background-size: cover;
+  height: 10rem;
+
+  .sidebar__list {
+    position: absolute;
+    top: 25px;
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+
+    .slidebar__index--head,
+    .slidebar__index--info {
+      display: none;
+    }
+  }
+  .sidebar__index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 100%;
+    color: var(--White);
+    font-family: var(--ubuntu-bold);
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 0.5rem;
+    border: 1px solid var(--White);
+  }
+
+  .sidebar__index--active {
+    background-color: var(--Light-blue);
+    color: var(--Marine-blue);
+  }
+}

@@ -28,6 +28,7 @@
 }
 
 body {
+  position: relative;
   background-color: var(--Magnolia);
 }
 
@@ -65,8 +66,8 @@ p {
   margin-right: 2rem;
 }
 
-button {
+/* button {
   padding: 1rem;
   background-color: var(--Marine-blue);
   color: var(--White);
-}
+} */

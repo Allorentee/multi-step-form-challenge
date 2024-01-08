@@ -1,4 +1,6 @@
 .form__wrapper {
+  position: absolute;
+  top: 82px;
   padding: 1rem;
 
   .form__container {
