@@ -1,0 +1,13 @@
+.sidebar__wrapper {
+  background: url("/assets/images/bg-sidebar-mobile.svg");
+
+  .sidebar__list {
+    display: flex;
+    gap: 1rem;
+  }
+  .sidebar__index {
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid var(--White);
+  }
+}

@@ -30,3 +30,43 @@
 body {
   background-color: var(--Magnolia);
 }
+
+input {
+  border: 1px solid var(--Light-gray);
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  width: 100%;
+
+  &::placeholder {
+    font-family: var(--ubuntu-regular);
+    color: var(--Light-gray);
+  }
+}
+
+label {
+  font-size: 0.8rem;
+  font-family: var(--ubuntu-regular);
+  color: var(--Marine-blue);
+}
+
+h2 {
+  color: var(--Marine-blue);
+  font-family: var(--ubuntu-bold);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-family: var(--ubuntu-regular);
+}
+
+.detail {
+  color: var(--Cool-gray);
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+button {
+  padding: 1rem;
+  background-color: var(--Marine-blue);
+  color: var(--White);
+}

@@ -1,9 +1,25 @@
 .form__wrapper {
   padding: 1rem;
-}
 
-.form__container {
-  padding: 2rem;
-  border-radius: 1rem;
-  background: var(--White);
+  .form__container {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--White);
+
+    .form__inputContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        font-family: var(--ubuntu-regular);
+        width: 100%;
+      }
+    }
+  }
 }

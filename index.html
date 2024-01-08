@@ -17,28 +17,36 @@
   </head>
   <body>
     <!-- HEADER -->
-    <section>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
+    <section class="sidebar__wrapper">
+      <ul class="sidebar__list">
+        <li class="sidebar__index">1</li>
+        <li class="sidebar__index">2</li>
+        <li class="sidebar__index">3</li>
+        <li class="sidebar__index">4</li>
       </ul>
     </section>
     <!-- SECTION -->
     <section class="form__wrapper">
       <form action="POST" class="form__container">
         <h2>Personal Info</h2>
-        <p>Please, provide your name, email, adress and phone number.</p>
+        <p class="detail">
+          Please, provide your name, email, adress and phone number.
+        </p>
         <section id="step-one">
-          <article>
+          <article class="form__inputContainer">
             <label>
               Name
-              <input type="text" required placeholder="e.g.Stephen King" />
+              <input
+                class="form__input"
+                type="text"
+                required
+                placeholder="e.g.Stephen King"
+              />
             </label>
             <label>
               Email
               <input
+                class="form__input"
                 type="email"
                 required
                 placeholder="e.g.stephenking@lorem.com"
@@ -46,7 +54,12 @@
             </label>
             <label>
               Phone Number
-              <input type="text" required placeholder="e.g +1 234 567 890" />
+              <input
+                class="form__input"
+                type="text"
+                required
+                placeholder="e.g +1 234 567 890"
+              />
             </label>
           </article>
         </section>
