@@ -8,7 +8,51 @@
   .form__container {
     padding: 2rem;
     border-radius: 1rem;
+    width: 20rem;
     background: var(--White);
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      input {
+        display: none;
+      }
+      input:checked + .form__input--button {
+        border: 1px solid var(--Purplish-blue);
+        background-color: var(--Purplish-blue-opacity);
+      }
+
+      .form__input--button {
+        display: block;
+        width: 100%;
+        height: 4.5rem;
+        background-color: transparent;
+        position: relative;
+        border-radius: 0.5rem;
+        border: 1px solid var(--Light-gray);
+        border-color: var(--Light-gray);
+
+        img {
+          position: absolute;
+          bottom: 15px;
+          left: 10px;
+        }
+        h2 {
+          position: absolute;
+          bottom: 25px;
+          left: 70px;
+        }
+        p {
+          position: absolute;
+          bottom: 1px;
+          left: 70px;
+        }
+      }
+    }
 
     .form__inputContainer {
       display: flex;

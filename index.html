@@ -15,10 +15,13 @@
     <link rel="stylesheet" href="/styles/globals.css" />
     <link rel="stylesheet" href="/styles/normailze.css" />
     <title>Frontend Mentor | Multi-step form</title>
+    <script type="module" defer src="/components/header.js"></script> 
+   <script type="module" defer src="header.js"></script> 
   </head>
   <body>
+    <div class="desktopCard">
     <!-- HEADER -->
-    <section class="sidebar__wrapper">
+    <header class="sidebar__wrapper">
       <ul class="sidebar__list">
         <li class="sidebar__index_0">
           <button class="sidebar__index sidebar__index--active">1</button>
@@ -41,15 +44,12 @@
           <h3 class="slidebar__index--head">asdasdsa</h3>
         </li>
       </ul>
-    </section>
+    </header>
     <!-- SECTION -->
     <section class="form__wrapper">
       <form action="POST" class="form__container">
-        <h2>Personal Info</h2>
-        <p class="detail">
-          Please, provide your name, email, adress and phone number.
-        </p>
-        <section id="step-one">
+        <div id="header"></div>
+        <!-- <section id="step-one">
           <article class="form__inputContainer">
             <label>
               Name
@@ -79,33 +79,35 @@
               />
             </label>
           </article>
-        </section>
+        </section> -->
 
-        <!-- <section id="step-two">
-        <article>
-          <h2>Select your plan</h2>
-          <p>You have the option of monthly or yearly biling</p>
-          <input>
-            Name
-            <input type="button" required placeholder="e.g.Stephen King" />
-          </input>
-          <label>
-            Email
-            <input
-              type="button"
-              required
-              value="arcade"
-              placeholder="e.g.stephenking@lorem.com"
-            />
+        <section id="step-two">
+        <article class="container">
+
+          <input type="radio" id="arcade"  name="subscription" value="arcade"  />
+          <label class="form__input--button" for="arcade">
+            <img src="/assets/images/icon-arcade.svg" alt="arcane" class="image">
+            <h2>Arcade</h2>
+            <p class="detail">$9/mo</p>      
           </label>
-          <label>
-            Phone Number
-            <input type="text" required placeholder="e.g +1 234 567 890" />
+
+          <input type="radio" id="advanced" name="subscription" value="advanced"  />
+          <label class="form__input--button" for="advanced">
+            <img src="/assets/images/icon-advanced.svg" alt="arcane" class="image">
+            <h2>Advanced</h2>
+            <p class="detail">$12/mo</p>
+          </label>
+
+          <input type="radio" id="pro" name="subscription" value="pro"  />
+          <label class="form__input--button" for="pro">
+            <img src="/assets/images/icon-pro.svg" alt="arcane" class="image">
+            <h2>Pro</h2>
+            <p class="detail">$15/mo</p>
           </label>
         </article>
       </section>
 
-      <section id="step-three">
+      <!-- <section id="step-three">
         <article>
           <h2>Personal Info</h2>
           <p>Please, provide your name, email, adress and phone number.</p>
@@ -126,7 +128,7 @@
             <input type="text" required placeholder="e.g +1 234 567 890" />
           </label>
         </article>
-      </section>
+      </section> 
 
       <section id="step-four">
         <article>
@@ -149,7 +151,7 @@
             <input type="text" required placeholder="e.g +1 234 567 890" />
           </label>
         </article>
-      </section> -->
+      </section>  -->
       </form>
     </section>
   </body>

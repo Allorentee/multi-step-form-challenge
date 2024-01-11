@@ -1,6 +1,7 @@
 {
   "name": "multi-step-form",
   "version": "1.0.0",
+  "type": "module",
   "description": "![Design preview for the Multi-step form coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "devDependencies": {},
